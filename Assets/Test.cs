@@ -12,7 +12,7 @@ public class Test : MonoBehaviour
     {
         if (Input.GetButtonDown("o"))
         {
-            SceneManager.LoadScene("Scene2");
+            SceneManager.LoadScene("Scene2"); ///ssssssss
         }
     }
 }
