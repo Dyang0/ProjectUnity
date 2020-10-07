@@ -10,7 +10,7 @@ public class Test : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey("o"))
+        if (Input.GetKey("o")) //sss dsadadaaad
         {
             SceneManager.LoadScene("Scene2"); ///ssssssss
         }
