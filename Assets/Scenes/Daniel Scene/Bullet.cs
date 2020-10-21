@@ -10,7 +10,18 @@ public class Bullet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rb.velocity = transform.right * speed; //shoots the bullet in the direction you're facing
+
+        Vector3 vel = rb.velocity;
+        vel.z = 0f;
+        vel.x = 0f;
+        vel.y = 0f;
+        rb.velocity = vel;
+        
+
+        rb.velocity = transform.right * speed ; // * Time.deltaTime; //shoots the bullet in the direction you're facing
+        vel.y = 0f;
+        vel.z = 0f;
+        vel.x = 0f;
     }
 
     /*private void OnTriggerEnter2D(Collider2D hitInfo)
