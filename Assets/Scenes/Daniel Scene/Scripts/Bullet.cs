@@ -4,18 +4,34 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public float speed = 20f;
+    public float speed;
     public Rigidbody2D rb;
-    public int damage = 40;
+
+    private int weaponDamage;
+
+    public Bullet (int wD, float s)
+    {
+        weaponDamage = wD;
+        speed = s;
+    }
+   
     // Start is called before the first frame update
+
     void Start()
     {
 
         
         rb.velocity = transform.right * speed ; // * Time.deltaTime; //shoots the bullet in the direction you're facing
-        Destroy(gameObject, 1f);
+
+        Destroy(gameObject, 5f); //find a better way to detext hits or not
         
     }
+
+    
+
+   
+
+
 
     /*private void OnTriggerEnter2D(Collider2D hitInfo)
     {
