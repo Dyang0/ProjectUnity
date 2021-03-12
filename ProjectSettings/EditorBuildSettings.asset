@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Daniel Scene/Scene2.unity
     guid: f5517ece6c86e5949bb155e8d29fe37b
   - enabled: 1
-    path: Assets/Scenes/Anthony/MapGen.unity
+    path: Assets/Scenes/Anthony/L1.unity
     guid: cef596fcd216291478dd8c66832552d5
   - enabled: 1
     path: Assets/Scenes/Anthony/L2.unity
